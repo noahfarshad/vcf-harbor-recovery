@@ -2,6 +2,9 @@
 
 A Supervisor region teardown can remove Harbor without finishing the uninstall. The name stays claimed by a cluster-scoped `ClusterDomainResolutionEntry`. A role binding in `kube-system` does not reach it, so the UI retry does nothing. Image pulls fail closed, and VKS on that Supervisor goes down with the registry.
 
+License: GPL-3.0. Built and proved out for [essential.coach](https://essential.coach).
+Full write-up: [When Regional Harbor Sticks, VKS Stops](https://essential.coach/regional-harbor-stuck-after-supervisor-teardown/)
+
 Regional Harbor is the registry VCF 9.1 documents for Supervisor services, VCF CLI plugins, and VKS add-ons. A Harbor you install by hand on one Supervisor does not stand in for it.
 
 https://techdocs.broadcom.com/us/en/vmware-cis/vcf/vcf-service-administration-and-development/9-1/using-harbor-as-vcf-service.html
